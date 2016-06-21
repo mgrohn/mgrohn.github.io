@@ -1,0 +1,21 @@
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="d3.parcoords.js"></script>
+<link rel="stylesheet" type="text/css" href="d3.parcoords.css">
+<div id="example1" class="parcoords" style="width:360px;height:150px"></div>
+
+<script>
+
+// interact with this variable from a javascript console
+var pc1;
+
+// load csv file and create the chart
+d3.csv('data/cars.csv', function(data) {
+  pc1 = d3.parcoords()("#example1")
+    .data(data)
+    .hideAxis(["name"])
+    .composite("darken")
+    .alpha(0.35)
+    .render()
+  .createAxes();
+});
+</script>
