@@ -24,15 +24,9 @@ var plotcolor = d3.scale.linear()
   .domain([0, 50])
   .range(["orange", "green"])
   .interpolate(d3.interpolateLab);
-  
-var plotcolor2 = d3.scale.linear()
-  .domain([0, 50])
-  .range(["red", "blue"])
-  .interpolate(d3.interpolateLab);  
 
 // interact with this variable from a javascript console
 var pc1;
-var pc2;
 
 // load csv file and create the chart
 d3.csv('data/Toimialat-T.csv', function(data) {
@@ -84,6 +78,17 @@ d3.csv('data/Toimialat-T.csv', function(data) {
 
 });
 
+</script>
+<script>
+  
+var plotcolor2 = d3.scale.linear()
+  .domain([0, 50])
+  .range(["red", "blue"])
+  .interpolate(d3.interpolateLab);  
+
+var pc2;
+
+
 // load csv file and create the chart
 d3.csv('data/Toimialat-V.csv', function(data) {
   pc2 = d3.parcoords()("#example2")
@@ -133,5 +138,6 @@ d3.csv('data/Toimialat-V.csv', function(data) {
   };
 
 });
+  
 </script>
   
