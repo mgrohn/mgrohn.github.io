@@ -86,11 +86,11 @@ d3.csv('data/Toimialat-T.csv', function(data) {
 
 // load csv file and create the chart
 d3.csv('data/Toimialat-V.csv', function(data) {
-  pc1 = d3.parcoords()("#example1")
+  pc1 = d3.parcoords()("#example2")
     .data(data)
     .hideAxis(["Alue"])
     .composite("darken")
-    .color(function(d) { return plotcolor2(d['TP_A']); })  // quantitative color scale
+    .color(function(d) { return plotcolor2(d['VP_A']); })  // quantitative color scale
     .alpha(0.35)
     .render()
     .brushMode("1D-axes")  // enable brushing
