@@ -111,8 +111,8 @@ d3.csv('data/Toimialat-T.csv', function(data) {
 <script>
   
 var plotcolor2 = d3.scale.linear()
-  .domain([0, 50])
-  .range(["#333333","lime","#770077", "#6666ff"])
+  .domain([0,3,12,22,33, 50])
+  .range(["#000000","#880000","#bb00bb","#0000ee","#11ff11","#dddd00"])
   .interpolate(d3.interpolateLab);  
 
 var pc2;
