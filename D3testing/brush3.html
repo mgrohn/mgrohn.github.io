@@ -50,7 +50,7 @@ Q = Terveys- ja sosiaalipalvelut
 // linear color scale
 var plotcolor = d3.scale.linear()
   .domain([0, 50])
-  .range(["#dd5500", "yellow"])
+  .range(["#bb4400", "green"])
   .interpolate(d3.interpolateLab);
 
 // interact with this variable from a javascript console
@@ -112,7 +112,7 @@ d3.csv('data/Toimialat-T.csv', function(data) {
   
 var plotcolor2 = d3.scale.linear()
   .domain([0, 50])
-  .range(["red", "blue"])
+  .range(["#aa00aa", "#3333ff"])
   .interpolate(d3.interpolateLab);  
 
 var pc2;
