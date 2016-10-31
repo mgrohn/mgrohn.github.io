@@ -9,6 +9,9 @@
 
 <h1>Rinnakkaiskoordinaatistoesitykset toimialojen tilanteesta kunnittain vuosina 2007 ja 2012</h1>
 
+Tässä on suoraan hyödynnetty Kai Changin <a href="https://syntagmatic.github.io/parallel-coordinates/">Parallel coordinates</a> toolkittiä
+ja erityisesti Brushing esimerkkiä. <p>
+
 Toimialapystyakseleita voidaan suodattaa valitsemalla akselilta ala-alue, jonka kautta kulkevat vain näytetään muilta akseleilta. 
 Valintoja voi olla useammalle pystyakselilla samanaikaisesti.
 <p>
@@ -47,7 +50,7 @@ Q = Terveys- ja sosiaalipalvelut
 // linear color scale
 var plotcolor = d3.scale.linear()
   .domain([0, 50])
-  .range(["yellow", "green", "blue", "red"])
+  .range(["990000", "green", "blue", "red"])
   .interpolate(d3.interpolateLab);
 
 // interact with this variable from a javascript console
